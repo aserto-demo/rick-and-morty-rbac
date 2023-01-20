@@ -8,7 +8,7 @@ allowed {
     roles := {"sidekick", "evil_genius"}
 
     some x in roles
-    input.user.attributes.roles[_] == x
+    input.user.properties.roles[_] == x
 
     input.resource.asset == data.assets[_]
 }
